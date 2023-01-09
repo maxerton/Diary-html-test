@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School diary</title>
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: var(--navbar-color);">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fa-solid fa-chalkboard-user"></i></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0 nav" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                            aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="homework-tab" data-bs-toggle="tab"
+                            data-bs-target="#homework-tab-pane" type="button" role="tab"
+                            aria-controls="homework-tab-pane" aria-selected="false">Homework</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="settings-tab" data-bs-toggle="tab"
+                            data-bs-target="#settings-tab-pane" type="button" role="tab"
+                            aria-controls="settings-tab-pane" aria-selected="false">Settings</a>
+                    </li>
+                </ul>
+                <img src="static/images/av_64.png" class="img-max-h" alt="">
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="tab-content" id="myTabContent">
+
+        <!-- Home -->
+
+        <!-- tab-pane fade -->
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="container-fluid">
+                <div class="row">
+                    <h3 class="col-12 text-center m-4">
+                        Dakota Greenway (ABC_123)
+                    </h3>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-center my-4">
+                            News
+                        </h3>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <div class="my-card">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="static/images/holiday.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="d-flex justify-content-between">
+                                                <span>Weekends</span><span class="text-end">1 days ago</span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p>
+                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+                                                        tempore pariatur numquam nisi quidem odit!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="my-card">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="d-flex justify-content-between">
+                                                <span>Programming consultations</span><span class="text-end">2 days
+                                                    ago</span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p>
+                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+                                                        tempore pariatur numquam nisi quidem odit!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="my-card">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <img src="static/images/bank.png" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-8">
+                                            <div class="d-flex justify-content-between">
+                                                <span>Meeting with ABC bank</span><span
+                                                    class="text-end">01/01/2023</span>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <p>
+                                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+                                                        tempore pariatur numquam nisi quidem odit!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <button class="btn my-btn">More</button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-center my-4">
+                            Rewards
+                        </h3>
+                        <div class="container-fluid rew_cont">
+                            <div class="d-flex my-cont justify-content-around">
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        Class attended
+                                    </div>
+                                </div>
+                                <div class="center">+1 <img src="static/images/badge.png" style="width: 2em;" alt="">
+                                </div>
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        20.04.2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex my-cont justify-content-around">
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        Class attended
+                                    </div>
+                                </div>
+                                <div class="center">+1 <img src="static/images/badge.png" style="width: 2em;" alt="">
+                                </div>
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        20.04.2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex my-cont justify-content-around">
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        Class attended
+                                    </div>
+                                </div>
+                                <div class="center">+1 <img src="static/images/badge.png" style="width: 2em;" alt="">
+                                </div>
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        20.04.2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex my-cont justify-content-around">
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        Class attended
+                                    </div>
+                                </div>
+                                <div class="center">+1 <img src="static/images/badge.png" style="width: 2em;" alt="">
+                                </div>
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        20.04.2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex my-cont justify-content-around">
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        Class attended
+                                    </div>
+                                </div>
+                                <div class="center">+1 <img src="static/images/badge.png" style="width: 2em;" alt="">
+                                </div>
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        20.04.2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex my-cont justify-content-around">
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        Class attended
+                                    </div>
+                                </div>
+                                <div class="center">+1 <img src="static/images/badge.png" style="width: 2em;" alt="">
+                                </div>
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        20.04.2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex my-cont justify-content-around">
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        Class attended
+                                    </div>
+                                </div>
+                                <div class="center">+1 <img src="static/images/badge.png" style="width: 2em;" alt="">
+                                </div>
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        20.04.2022
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex my-cont justify-content-around">
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        Class attended
+                                    </div>
+                                </div>
+                                <div class="center">+1 <img src="static/images/badge.png" style="width: 2em;" alt="">
+                                </div>
+                                <div class="d-flex align-items-center cont-for-arr">
+                                    <div class="arrow-custom">
+                                        20.04.2022
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-custom btn-light">More</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Homework -->
+
+
+        <!--  -->
+        <div class="tab-pane fade" id="homework-tab-pane" role="tabpanel" aria-labelledby="homework-tab" tabindex="1">
+            <div class="container">
+                <div class="row position-relative">
+                    <h3 class="col-12 text-center my-5">
+                        Homework
+                    </h3>
+                    <div class="right-legend d-none d-md-block" style="text-align: right;">
+                        <ul>
+                            <li style="--color-circle: var(--colorgray3)">current</li>
+                            <li style="--color-circle: var(--bs-success)">reviewed</li>
+                            <li style="--color-circle: var(--bs-info)">under review</li>
+                            <li style="--color-circle: var(--bs-danger)">overdue</li>
+                        </ul>
+                    </div>
+                    <h3 class="col-12 my-3">JavaScript</h3>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-light my-2">
+                            <div class="card-body">
+                                <h5>Loops</h5>
+                                <div>10/05/2022</div>
+                                <input type="file" class="form-control mt-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-primary my-2">
+                            <div class="card-body">
+                                <h5>Conditional statements</h5>
+                                <div>8/05/2022</div>
+                                <div class="btn-group mt-3" role="group" style="width: 100%;">
+                                    <button type="button" class="btn btn-outline-light"><i class="fa fa-download"
+                                            aria-hidden="true"></i> Your file</button>
+                                    <button type="button" class="btn btn-outline-light"><i class="fa fa-trash"
+                                            aria-hidden="true"></i> Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-primary my-2">
+                            <div class="card-body">
+                                <h5>Variables</h5>
+                                <div>5/05/2022</div>
+                                <div class="btn-group mt-3" role="group" style="width: 100%;">
+                                    <button type="button" class="btn btn-outline-light"><i class="fa fa-download"
+                                            aria-hidden="true"></i> Your file</button>
+                                    <button type="button" class="btn btn-outline-light"><i class="fa fa-trash"
+                                            aria-hidden="true"></i> Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3 class="col-12 my-3">HTML & CSS</h3>
+                    <hr>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-danger my-2">
+                            <div class="card-body">
+                                <h5>Adaptive Layout</h5>
+                                <div>29/04/2022</div>
+                                <input type="file" class="form-control mt-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-danger my-2">
+                            <div class="card-body">
+                                <h5>Grid Layout</h5>
+                                <div>27/04/2022</div>
+                                <input type="file" class="form-control mt-3">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-success my-2">
+                            <div class="card-body">
+                                <h5>Flexbox</h5>
+                                <span
+                                    class="position-absolute translate-middle badge rounded-pill bg-dark bg-opacity-50 c-badge">
+                                    11
+                                    <span class="visually-hidden">Your grades</span>
+                                </span>
+                                <div>24/04/2022</div>
+                                <div class="btn-group mt-3" role="group" style="width: 100%;">
+                                    <button type="button" class="btn btn-outline-light"><i class="fa fa-download"
+                                            aria-hidden="true"></i> Your file</button>
+                                    <button type="button" class="btn btn-outline-light"><i
+                                            class="fa-solid fa-arrow-rotate-right"></i> Resend</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-success my-2">
+                            <div class="card-body">
+                                <h5>Animations</h5>
+                                <span
+                                    class="position-absolute translate-middle badge rounded-pill bg-dark bg-opacity-50 c-badge">
+                                    10
+                                    <span class="visually-hidden">Your grades</span>
+                                </span>
+                                <div>20/04/2022</div>
+                                <div class="btn-group mt-3" role="group" style="width: 100%;">
+                                    <button type="button" class="btn btn-outline-light"><i class="fa fa-download"
+                                            aria-hidden="true"></i> Your file</button>
+                                    <button type="button" class="btn btn-outline-light"><i
+                                            class="fa-solid fa-arrow-rotate-right"></i> Resend</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-success my-2">
+                            <div class="card-body">
+                                <h5>Forms</h5>
+                                <span
+                                    class="position-absolute translate-middle badge rounded-pill bg-dark bg-opacity-50 c-badge">
+                                    10
+                                    <span class="visually-hidden">Your grades</span>
+                                </span>
+                                <div>18/04/2022</div>
+                                <div class="btn-group mt-3" role="group" style="width: 100%;">
+                                    <button type="button" class="btn btn-outline-light"><i class="fa fa-download"
+                                            aria-hidden="true"></i> Your file</button>
+                                    <button type="button" class="btn btn-outline-light"><i
+                                            class="fa-solid fa-arrow-rotate-right"></i> Resend</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-success my-2">
+                            <div class="card-body">
+                                <h5>Tables</h5>
+                                <span
+                                    class="position-absolute translate-middle badge rounded-pill bg-dark bg-opacity-50 c-badge">
+                                    12
+                                    <span class="visually-hidden">Your grades</span>
+                                </span>
+                                <div>17/04/2022</div>
+                                <div class="btn-group mt-3" role="group" style="width: 100%;">
+                                    <button type="button" class="btn btn-outline-light"><i class="fa fa-download"
+                                            aria-hidden="true"></i> Your file</button>
+                                    <button type="button" class="btn btn-outline-light"><i
+                                            class="fa-solid fa-arrow-rotate-right"></i> Resend</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Settings -->
+
+        <!-- tab-pane fade -->
+        <div class="tab-pane fade" id="settings-tab-pane" role="tabpanel" aria-labelledby="settings-tab" tabindex="2">
+            <div class="container-md">
+                <div class="row">
+                    <h3 class="col-12 text-center my-5">
+                        Settings
+                    </h3>
+                </div>
+                <div class="row bg-info text-light text-uppercase text-center p-2" style="border-radius: 4px;">
+                    <div class="col-12 col-md-2">avatar</div>
+                    <div class="col-12 col-md-6">student`s info</div>
+                    <div class="col-12 col-md-4">change password</div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-2">
+                        <img src="static/images/av_256.png" class="img-fluid mt-4" alt="">
+                        <button class="btn btn-dark w-100">Chose photo</button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <form class="form py-2" action="">
+                            <input type="text" class="form-control my-2" placeholder="First name">
+                            <input type="text" class="form-control my-2" placeholder="Last name">
+                            <input type="email" class="form-control my-2" placeholder="Email">
+                            <input type="phone" class="form-control my-2" placeholder="Phone number">
+                            <input type="text" class="form-control my-2" placeholder="Address">
+                            <input type="url" class="form-control my-2" placeholder="FB link">
+                            <input type="submit" class="btn btn-dark w-100 mt-2" value="Save changes">
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <form action="" method="post">
+                            <input type="text" class="form-control my-2" placeholder="Old password">
+                            <input type="text" class="form-control my-2" placeholder="New password">
+                            <input type="text" class="form-control my-2" placeholder="Repeat password">
+                            <input type="submit" class="btn btn-dark w-100 mt-2" value="Change password">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+<script src="static/js/bootstrap.bundle.min.js"></script>
+
+</html>

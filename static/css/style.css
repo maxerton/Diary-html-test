@@ -1,0 +1,203 @@
+
+:root {
+    --colorblue1: #34497C;
+    --colorblue2: #4B69B1;
+    --colorgray1: #585858;
+    --colorgray2: #828282;
+    --colorgray3: #C4C4C4;
+    --colorgray4: #747171;
+    --colororange1: #FBA702;
+    --colorblue3: #253458;
+    --colorblack: #000;
+    --navbar-color: #1B5589;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:16px;
+    color: var(--colorgray1);
+}
+
+.img-max-h {
+    height: 100%;
+}
+
+.my-btn {
+    width: 100%;
+    background-color: rgb(80, 80, 80);
+    color: #ddd;
+    margin-top: 1rem;
+}
+
+.btn-custom {
+    width: 100%;
+}
+
+.my-btn:hover {
+    background-color: rgb(65, 65, 65);
+    color: #ddd;
+}
+
+.my-btn:active, .my-btn:focus-visible {
+    background-color: rgb(60, 60, 60)!important;
+    color: #ddd!important;
+}
+
+.center-item {
+    margin: 5px 0;
+    font-weight: 900;
+}
+
+.cont-rew {
+    border: solid 1px #ddd;
+    border-radius: 5px;
+}
+
+.my-cont {
+    margin: 1.4em 0;
+}
+
+.rew_cont {
+    font-size: 0.9em;
+}
+
+.my-cont:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.cont-for-arr {
+    width: 40%;
+    justify-content: center;
+}
+
+.arrow-custom {
+    width: 80%;
+    text-align: center;
+    border: solid 1px var(--colorgray3);
+    position: relative;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-custom::after, .arrow-custom::before {
+    content: '';
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    transform: rotate(45deg);
+    border: 1px solid var(--colorgray3);
+    position:absolute;
+}
+
+.arrow-custom::before {
+    left: 0;
+    margin-left: -0.75em;
+}
+
+.arrow-custom::after {
+    right: 0;
+    margin-right: -0.75em;
+}
+
+.my-cont:nth-child(even) .cont-for-arr:first-child .arrow-custom {
+    border-left: none;
+}
+
+
+.my-cont:nth-child(even) .cont-for-arr:last-child .arrow-custom {
+    border-right: none;
+}
+
+.my-cont:nth-child(even) .cont-for-arr:first-child .arrow-custom::before {
+    border-right: none;
+    border-top: none;
+}
+
+
+.my-cont:nth-child(even) .cont-for-arr:last-child .arrow-custom::after {
+    border-bottom: none;
+    border-left: none;
+}
+
+.my-cont:nth-child(even) .cont-for-arr:first-child .arrow-custom::after {
+    display: none;
+}
+
+
+.my-cont:nth-child(even) .cont-for-arr:last-child .arrow-custom::before {
+    display: none;
+}
+
+.my-cont:nth-child(odd) .cont-for-arr:first-child .arrow-custom {
+    border-right: none;
+}
+
+
+.my-cont:nth-child(odd) .cont-for-arr:last-child .arrow-custom {
+    border-left: none;
+}
+
+.my-cont:nth-child(odd) .cont-for-arr:first-child .arrow-custom::after {
+    border-left: none;
+    border-bottom: none;
+}
+
+
+.my-cont:nth-child(odd) .cont-for-arr:last-child .arrow-custom::before {
+    border-top: none;
+    border-right: none;
+}
+
+.my-cont:nth-child(odd) .cont-for-arr:first-child .arrow-custom::before {
+    display: none;
+}
+
+
+.my-cont:nth-child(odd) .cont-for-arr:last-child .arrow-custom::after {
+    display: none;
+}
+
+
+/* Homework */
+
+.right-legend {
+    position: absolute;
+    top: 1em;
+}
+
+.right-legend ul {
+    list-style-type: none;
+}
+
+.right-legend li {
+    position: relative;
+    padding-right: 1.3em;
+}
+
+.right-legend li::after {
+    content: ' - ';
+}
+
+.right-legend li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 1em;
+    width: 1em;
+    right: 0;
+    border-radius: 50%;
+    background-color: var(--color-circle);
+}
+
+.c-badge {
+    top: 2em;
+    right: 0;
+}
